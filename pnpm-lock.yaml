@@ -58,13 +58,16 @@ importers:
         version: 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       NextCrm:
         specifier: 'file:'
-        version: file:(@types/react-dom@18.3.0)(@types/react@18.3.3)(prisma@5.21.1)(tailwindcss@3.4.10)
+        version: dev1@file:(@types/react-dom@18.3.0)(@types/react@18.3.3)(prisma@5.21.1)(tailwindcss@3.4.10)
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      dev1:
+        specifier: 'file:'
+        version: file:(@types/react-dom@18.3.0)(@types/react@18.3.3)(prisma@5.21.1)(tailwindcss@3.4.10)
       embla-carousel-react:
         specifier: ^8.2.0
         version: 8.2.0(react@18.3.1)
@@ -928,9 +931,6 @@ packages:
   '@xobotyi/scrollbar-width@1.9.5':
     resolution: {integrity: sha512-N8tkAACJx2ww8vFMneJmaAgmjAG1tnVBZJRLRcx061tmsLRZHSEZSLuGWnwPtunsSLvSqXQ2wfp7Mgqg1I+2dQ==}
 
-  'NextCrm@file:':
-    resolution: {directory: '', type: directory}
-
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -1230,6 +1230,9 @@ packages:
 
   detect-node-es@1.1.0:
     resolution: {integrity: sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==}
+
+  'dev1@file:':
+    resolution: {directory: '', type: directory}
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -3438,58 +3441,6 @@ snapshots:
 
   '@xobotyi/scrollbar-width@1.9.5': {}
 
-  NextCrm@file:(@types/react-dom@18.3.0)(@types/react@18.3.3)(prisma@5.21.1)(tailwindcss@3.4.10):
-    dependencies:
-      '@clerk/nextjs': 5.3.3(next@14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@clerk/types': 4.14.0
-      '@headlessui/react': 2.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@hookform/resolvers': 3.9.0(react-hook-form@7.53.0(react@18.3.1))
-      '@prisma/client': 5.21.1(prisma@5.21.1)
-      '@radix-ui/react-accordion': 1.2.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-avatar': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-dialog': 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-dropdown-menu': 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-label': 2.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-navigation-menu': 1.2.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-progress': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-select': 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-slot': 1.1.0(@types/react@18.3.3)(react@18.3.1)
-      '@radix-ui/react-tabs': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-tooltip': 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      class-variance-authority: 0.7.0
-      clsx: 2.1.1
-      embla-carousel-react: 8.2.0(react@18.3.1)
-      framer-motion: 11.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      hamburger-react: 2.5.1(react@18.3.1)
-      input-otp: 1.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      lucide-react: 0.428.0(react@18.3.1)
-      mini-svg-data-uri: 1.4.4
-      next: 14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      next-themes: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-hook-form: 7.53.0(react@18.3.1)
-      react-parallax-tilt: 1.7.237(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-use: 17.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      recharts: 2.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      sonner: 1.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      tailwind-merge: 2.5.2
-      tailwind-scrollbar-hide: 1.1.7
-      tailwindcss-animate: 1.0.7(tailwindcss@3.4.10)
-      usehooks-ts: 3.1.0(react@18.3.1)
-      zod: 3.23.8
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@emotion/is-prop-valid'
-      - '@opentelemetry/api'
-      - '@playwright/test'
-      - '@types/react'
-      - '@types/react-dom'
-      - babel-plugin-macros
-      - prisma
-      - sass
-      - tailwindcss
-
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
       acorn: 8.12.1
@@ -3816,6 +3767,58 @@ snapshots:
       object-keys: 1.1.1
 
   detect-node-es@1.1.0: {}
+
+  dev1@file:(@types/react-dom@18.3.0)(@types/react@18.3.3)(prisma@5.21.1)(tailwindcss@3.4.10):
+    dependencies:
+      '@clerk/nextjs': 5.3.3(next@14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@clerk/types': 4.14.0
+      '@headlessui/react': 2.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@hookform/resolvers': 3.9.0(react-hook-form@7.53.0(react@18.3.1))
+      '@prisma/client': 5.21.1(prisma@5.21.1)
+      '@radix-ui/react-accordion': 1.2.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-avatar': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-dialog': 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-dropdown-menu': 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-label': 2.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-navigation-menu': 1.2.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-progress': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-select': 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-slot': 1.1.0(@types/react@18.3.3)(react@18.3.1)
+      '@radix-ui/react-tabs': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-tooltip': 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      class-variance-authority: 0.7.0
+      clsx: 2.1.1
+      embla-carousel-react: 8.2.0(react@18.3.1)
+      framer-motion: 11.3.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      hamburger-react: 2.5.1(react@18.3.1)
+      input-otp: 1.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      lucide-react: 0.428.0(react@18.3.1)
+      mini-svg-data-uri: 1.4.4
+      next: 14.2.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-themes: 0.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-hook-form: 7.53.0(react@18.3.1)
+      react-parallax-tilt: 1.7.237(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-use: 17.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      recharts: 2.13.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      sonner: 1.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tailwind-merge: 2.5.2
+      tailwind-scrollbar-hide: 1.1.7
+      tailwindcss-animate: 1.0.7(tailwindcss@3.4.10)
+      usehooks-ts: 3.1.0(react@18.3.1)
+      zod: 3.23.8
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@emotion/is-prop-valid'
+      - '@opentelemetry/api'
+      - '@playwright/test'
+      - '@types/react'
+      - '@types/react-dom'
+      - babel-plugin-macros
+      - prisma
+      - sass
+      - tailwindcss
 
   didyoumean@1.2.2: {}
 
